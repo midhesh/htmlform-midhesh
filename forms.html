@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Registration</title>
+</head>
+<body style = "background-color: darkcyan;">
+	<h1 style = "font-family: courier; font-size: 275%; color: gold; text-align: center;">NATIONAL INSTITUTE OF TECHNOLOGY, WARANGAL</h1>
+	<a href = "https://www.nitw.ac.in/"><p style="text-align: center;"><img src = "C:\Users\midhe\OneDrive\Desktop\NITW logo.png" alt = "NITW" height="200" width = "150"></p></a>
+	<h2 style = "font-family: courier; font-size: 175%; color: ivory; text-align: center;">STUDENT COURSE REGISTRATION</h2>
+	<hr>
+	<p style="font-family: verdana; color: honeydew; text-align: center;">Please fill in relevant details for course registration, Even Sem, 2021.<br><br></p>
+
+	<h3 style = "font-family: courier; font-size: 140%; color: gold;">RULES - </h3>
+	<blockquote>
+		<p style="font-family: verdana; color: honeydew;">
+			1)Only one chance will be afforded to submit course details and student information accurately<br>
+			2)Deadline - 12th February 2021<br>
+			3)Maximum of 30 Credits is allowed for this semester<br>
+			4)Students with backlogs can register their backlog subjects later on<br>
+			5)Students with backlogs have to accomodate backlog subjects by dropping current semester credits</p><br><br><br><br>
+	</blockquote>
+	<hr>
+	<h3 style = "font-family: courier; font-size: 150%; color: ivory;">REGISTRATION FORM</h3>
+	<form action="#">
+		<fieldset>
+		<legend style = "color: gold; font-size: 130%;" ><b>Name</b></legend>
+		<label style = "color: honeydew;" for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname"><br><br>
+
+		<label style = "color: honeydew;" for="mname">Middle Name:</label><br>
+		<input type="text" id="mname" name="mname"><br><br>
+
+		<label style = "color: honeydew;" for="lname">Last Name:</label><br>
+		<input type="text" id="lname" name="lname"><br><br>
+
+		<input type="reset">
+		</fieldset>
+		<br><br>
+
+		<fieldset>
+		<legend style = "color: gold; font-size: 130%;" ><b>Contact</b></legend>
+		<label style = "color: honeydew;" for = "mobile">Mobile Number:</label><br>
+		<input type="tel" id="mobile" name="mobile" placeholder="12345-67890" pattern="[7-9]{1}[0-9]{9}"required><br><br>
+
+		<label style = "color: honeydew;" for = "phone">Landline Number:</label><br>
+		<input list="international" type="tel" name="phone" placeholder="123-4567890" pattern="[7-9]{1}[0-9]{9}"required>
+		<datalist id="international">
+			<option value="International Number">
+		</datalist>
+		<br><br>
+		<label style = "color: honeydew;" for = "emailid">Email ID:</label><br>
+		<input type="email" id="emailid" name="emailid"required placeholder="xyz@student.nitw.ac.in"><br>
+		<small style = "color: gold;">Note: Use Institute Email ID only</small><br><br>
+		<input type="reset">
+		</fieldset>
+		<br><br>
+
+		<fieldset>
+		<legend style = "color: gold; font-size: 130%;" ><b>Student Information</b></legend>
+		<label style = "color: honeydew;" for = "regno">Registration Number:</label><br>
+		<input type="number" id="regno" name="regno" pattern="[1-9]{6}"required><br><br>
+
+		<label style = "color: honeydew;" for = "rollno">Roll Number:</label><br>
+		<input type="number" id="rollno" name="rollno" pattern="[1]{1}[0-9]{5}"required><br><br>
+
+		<label style = "color: honeydew;" for = "branch">Branch:</label><br>
+		<select id="branch" name= "branch">
+			<option value="biotech">Biotech</option>
+			<option value="civil">Civil</option>
+			<option value="chem">Chemical</option>
+			<option value="cse">CSE</option>
+			<option value="eee">EEE</option>
+			<option value="ece" selected>ECE</option>
+			<option value="mech">Mech</option>
+			<option value="meta">Meta</option>
+		</select><br><br>
+
+		<label style = "color: honeydew;" for = "section">Section:</label><br>
+		<select id="section" name="section">
+			<option value="A">A</option>
+			<option value="B">B</option>
+		</select><br><br>
+
+		<label style = "color: honeydew;" for = "category">Student Category:</label><br>
+		<input list="category" type="text" id="lname" name="category"><br><br>
+		<datalist id="category">
+			<option value = "General">
+			<option value = "OBC">
+			<option value = "SC/ST">
+			<option value = "PWD">
+			<option value = "DASA">
+			<option value = "DASA-CIWG">
+			<option value = "Other">
+		</datalist><br>
+		<input type="reset">
+		</fieldset>
+
+		<fieldset>
+		<legend style = "color: gold; font-size: 130%;" ><b>Subjects</b></legend>
+		<label style = "color: honeydew;" for="backs">Backlogs?</label><br>
+		<input type="checkbox" id="backs" name="backs" value="YesBacks">
+		<label style = "color: honeydew;" for="backs">Yes</label><br>
+		<input type="checkbox" id="backs" name="backs" value="NoBacks">
+		<label style = "color: honeydew;" for="backs">No</label><br><br>
+
+		<label style = "color: honeydew;" for = "courses">Choose Courses:</label><br>
+		<select id="courses" name= "courses" size="5" multiple>
+			<option value="dn">Data Networks</option>
+			<option value="ertos">Embedded Real Time Operating Systems</option>
+			<option value="dsp">Digital Signal Processing</option>
+			<option value="itc">Information Theory and Coding</option>
+			<option value="dnlab">Data Networks Lab</option>
+			<option value="cslab">Communication Systems Lab</option>
+			<option value="webtech" selected>Web Technologies</option>
+			<option value="oe">Open Elective</option>
+			<option value="vlsi">Low Power VLSI</option>
+		</select><br><br>
+
+		<p style="font-family: verdana; font-size: 90%;color: honeydew;"><b>Mention backlog courses to be registered, along with number of credits</b></p>
+		<textarea name="backlogsubjects" rows="15" cols="25">
+		</textarea><br><br>
+		<input type="reset">
+		</fieldset>
+	</form><br>
+	<input type = "submit" value = "Verify & Submit">
+	<br><br><br>
+
+
+	<h3 style = "color: gold;"><ins>For queries, please contact your LMS Administrator: </ins></h3>
+		<a href="mailto: ece-lms@nitw.ac.in.com"><img src="C:\Users\midhe\OneDrive\Desktop\College\3rdYear\email.png" alt="Email ID" style="width:50px;height:50px;"> </a>
+		<address style="color: honeydew;">
+		National Institute of Technology,<br>
+		Warangal - 506004,<br>
+		TS, INDIA<br>
+		Phone: +91-870-2459191<br>
+		FAX : +91-870-2459547<br><br><br>
+
+		(done by: Midhesh Mahadevan Shankar, Roll.No:184137, Sec: A)
+		</address>
+</body>
+</html>
